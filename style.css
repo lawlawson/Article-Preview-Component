@@ -11,4 +11,67 @@
 
 body {
   font-family: 'Manrope', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  place-content: center;
+  background-color: var(--clr-light-greyish-blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  max-width: 730px;
+  max-height: 280px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.drawers {
+  width: 285px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.content {
+  padding: 30px;
+}
+
+.content p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.share-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.share-icon {
+  /* display: flex;
+  float: right; */
+  align-items: center;
+  text-align: center;
+  place-content: center;
+  background-color: var(--clr-light-greyish-blue);
+  border-radius: 50px;
+  height: 32px;
+  width: 32px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
 }
