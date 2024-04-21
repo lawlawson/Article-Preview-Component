@@ -60,15 +60,22 @@ h1 {
 }
 
 .share-icon {
-  /* display: flex;
-  float: right; */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  place-content: center;
   background-color: var(--clr-light-greyish-blue);
   border-radius: 50px;
   height: 32px;
   width: 32px;
+  cursor: pointer;
+}
+
+.name-info {
+  margin-right: 175px;
+}
+
+.personal-info-share {
+  display: flex;
 }
 
 .bottom-container {
