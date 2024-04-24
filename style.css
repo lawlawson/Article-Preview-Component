@@ -96,14 +96,15 @@ h1 {
   position: absolute;
   display: inline-block;
   cursor: pointer;
-  -webkit-user-select: none;
+  /* -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none; */
 }
 
 .popup {
-  display: flex;
+  display: none;
+  /* display: flex; */
   flex-direction: row;
   width: 250px;
   background-color: var(--clr-d-dark-blue);
@@ -148,4 +149,29 @@ h1 {
 .popup img {
   margin-left: 10px;
   margin-right: 5px;
+}
+
+.popup .show {
+  visibility: show;
+  display: flex;
+  /* -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; */
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
