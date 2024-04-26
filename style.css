@@ -96,24 +96,23 @@ h1 {
   position: absolute;
   display: inline-block;
   cursor: pointer;
-  /* -webkit-user-select: none;
+  z-index: 1;
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; */
+  user-select: none;
 }
 
 .popup {
   display: none;
-  /* display: flex; */
   flex-direction: row;
   width: 250px;
   background-color: var(--clr-d-dark-blue);
   color: #fff;
   border-radius: 10px;
-  position: absolute;
-  z-index: 1;
+  z-index: 99;
   padding: 10px 5px;
-  margin-left: 262px;
+  /* margin-left: 262px; */
   left: 63%;
   bottom: 42%;
   padding: 10px;
@@ -152,10 +151,9 @@ h1 {
 }
 
 .popup .show {
-  visibility: show;
-  display: flex;
-  /* -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s; */
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 @-webkit-keyframes fadeIn {
