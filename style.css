@@ -104,7 +104,6 @@ h1 {
   left: 51%;
   bottom: 31%;
   justify-content: flex-end;
-  cursor: pointer;
 }
 
 .popup {
@@ -159,6 +158,7 @@ h1 {
 .popup img {
   margin-left: 10px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .popup .show {
