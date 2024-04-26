@@ -74,7 +74,11 @@ h1 {
 
 .share-icon:hover {
   background-color: var(--clr-v-dark-greyish-blue);
-  fill: #fff;
+}
+
+.share-icon:hover img {
+  -webkit-filter: brightness(100);
+  filter: brightness(100);
 }
 
 .name-info {
@@ -104,6 +108,7 @@ h1 {
 }
 
 .popup {
+  display: none;
   position: relative;
   flex-direction: row;
   width: 250px;

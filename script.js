@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const shareIcon = document.querySelector('.share-icon');
   const popup = document.getElementById('popup');
 
-  let isOpen = false;
+  let isOpen = true;
 
   console.log(shareIcon);
   console.log(popup);
