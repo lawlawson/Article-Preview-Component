@@ -94,29 +94,35 @@ h1 {
 
 .popup-container {
   position: absolute;
-  display: inline-block;
+  display: flex;
+  width: 21rem;
+  height: 4rem;
+  left: 51%;
+  bottom: 31%;
+  justify-content: flex-end;
   cursor: pointer;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .popup {
-  display: none;
+  position: relative;
   flex-direction: row;
   width: 250px;
   background-color: var(--clr-d-dark-blue);
   color: #fff;
   border-radius: 10px;
-  z-index: 99;
+  z-index: 1;
   padding: 10px 5px;
-  /* margin-left: 262px; */
-  left: 63%;
-  bottom: 42%;
   padding: 10px;
   box-shadow: 5px 10px 18px #888888;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  right: -7.5rem;
+  top: -7.5rem;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .popup::after {
@@ -152,8 +158,6 @@ h1 {
 
 .popup .show {
   display: block;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
 }
 
 @-webkit-keyframes fadeIn {
