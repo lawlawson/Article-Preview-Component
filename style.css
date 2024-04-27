@@ -182,3 +182,24 @@ h1 {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 100vw;
+  }
+
+  .container {
+    flex-direction: column;
+    max-width: 327px;
+    max-height: 512px;
+  }
+
+  .drawers {
+    width: 100%;
+    height: 200px;
+  }
+
+  .name-info {
+    margin-right: 58px;
+  }
+}
