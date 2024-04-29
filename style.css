@@ -97,12 +97,11 @@ h1 {
 }
 
 .popup-container {
-  position: absolute;
+  position: fixed;
   display: flex;
   width: 21rem;
-  height: 4rem;
-  left: 51%;
-  bottom: 31%;
+  left: calc(50% - -1.5rem); /* Fixed position for desktop */
+  bottom: 300px;
   justify-content: flex-end;
 }
 
@@ -183,11 +182,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 767px) {
-  body {
-    min-width: 100vw;
-  }
-
+@media screen and (max-width: 1000px) {
   .container {
     flex-direction: column;
     max-width: 327px;
@@ -201,5 +196,26 @@ h1 {
 
   .name-info {
     margin-right: 58px;
+  }
+
+  .popup-container {
+    position: absolute;
+    left: calc(51% - 18.5rem);
+    bottom: 4%;
+  }
+
+  .popup {
+    width: 315px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: none;
+  }
+
+  .popup::after {
+    display: none;
+  }
+
+  .share-icon {
+    margin-top: 7px;
+    z-index: 99;
   }
 }
