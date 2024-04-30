@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/lawlawson/article-preview-component](https://github.com/lawlawson/article-preview-component)
 - Live Site URL: [https://friendly-narwhal-84b3f4.netlify.app/](https://friendly-narwhal-84b3f4.netlify.app/)
 
 ## My process
@@ -40,6 +40,8 @@ Users should be able to:
 - Flexbox
 
 ### What I learned
+
+This was simple project with a few considerations around layout changes on mobile and desktop. In addition to having variations in layout, using media queries. There was an opportunity to use JavaScript to manage the user interaction around the popup. The popup variations on different screen sizes was the most challenging aspect of this project.
 
 ## Author
 
