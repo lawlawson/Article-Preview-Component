@@ -100,7 +100,7 @@ h1 {
   position: fixed;
   display: flex;
   width: 21rem;
-  left: calc(50% - -1.5rem); /* Fixed position for desktop */
+  left: calc(50% - -1.5rem);
   bottom: 300px;
   justify-content: flex-end;
 }
@@ -108,7 +108,6 @@ h1 {
 .popup {
   display: none;
   position: relative;
-  flex-direction: row;
   width: 250px;
   background-color: var(--clr-d-dark-blue);
   color: #fff;
@@ -121,10 +120,8 @@ h1 {
   transition: all 0.2s ease-in-out;
   right: -7.5rem;
   top: -7.5rem;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
