@@ -136,13 +136,13 @@ h1 {
   border-color: var(--clr-d-dark-blue) transparent transparent transparent;
 }
 
-.popup span {
+.popup .span {
   display: flex;
   flex-direction: row;
   padding: 10px 5px;
 }
 
-.popup span p {
+.popup .span p {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 500;
